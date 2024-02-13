@@ -1,0 +1,708 @@
+[30m2022-02-05 17:36:07,213[0;39m [34m[0;39m[32m INFO[0;39m [[34mmain[0;39m] [33morg.springframework.boot.StartupInfoLogger[0;39m : Starting MyApiGatewayApplication using Java 1.8.0_202 on DESKTOP-MFJBM3L with PID 9624 (C:\Users\werty\3D Objects\flutterProject\herokuDeployments\my-api-gateway\target\classes started by werty in C:\Users\werty\3D Objects\flutterProject\herokuDeployments\my-api-gateway)
+[30m2022-02-05 17:36:07,229[0;39m [34m[0;39m[32m INFO[0;39m [[34mmain[0;39m] [33morg.springframework.boot.SpringApplication[0;39m : No active profile set, falling back to default profiles: default
+[30m2022-02-05 17:36:08,896[0;39m [34m[0;39m[32m INFO[0;39m [[34mmain[0;39m] [33morg.springframework.cloud.context.scope.GenericScope[0;39m : BeanFactory id=2bceb31d-811f-36a0-9874-21723db7a450
+[30m2022-02-05 17:36:08,991[0;39m [34m[0;39m[32m INFO[0;39m [[34mmain[0;39m] [33morg.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[0;39m : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[30m2022-02-05 17:36:08,992[0;39m [34m[0;39m[32m INFO[0;39m [[34mmain[0;39m] [33morg.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[0;39m : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[30m2022-02-05 17:36:08,999[0;39m [34m[0;39m[32m INFO[0;39m [[34mmain[0;39m] [33morg.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[0;39m : Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[30m2022-02-05 17:36:09,279[0;39m [34m[0;39m[32m INFO[0;39m [[34mmain[0;39m] [33morg.springframework.boot.web.embedded.tomcat.TomcatWebServer[0;39m : Tomcat initialized with port(s): 8080 (http)
+[30m2022-02-05 17:36:09,291[0;39m [34m[0;39m[32m INFO[0;39m [[34mmain[0;39m] [33morg.apache.juli.logging.DirectJDKLog[0;39m : Starting service [Tomcat]
+[30m2022-02-05 17:36:09,291[0;39m [34m[0;39m[32m INFO[0;39m [[34mmain[0;39m] [33morg.apache.juli.logging.DirectJDKLog[0;39m : Starting Servlet engine: [Apache Tomcat/9.0.56]
+[30m2022-02-05 17:36:09,442[0;39m [34m[0;39m[32m INFO[0;39m [[34mmain[0;39m] [33morg.apache.juli.logging.DirectJDKLog[0;39m : Initializing Spring embedded WebApplicationContext
+[30m2022-02-05 17:36:09,442[0;39m [34m[0;39m[32m INFO[0;39m [[34mmain[0;39m] [33morg.springframework.boot.web.servlet.context.ServletWebServerApplicationContext[0;39m : Root WebApplicationContext: initialization completed in 2143 ms
+[30m2022-02-05 17:36:10,059[0;39m [31m[0;39m[33m WARN[0;39m [[34mmain[0;39m] [33morg.springframework.context.support.AbstractApplicationContext[0;39m : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.cloud.gateway.config.GatewayClassPathWarningAutoConfiguration$SpringMvcFoundOnClasspathConfiguration': Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.cloud.gateway.config.GatewayClassPathWarningAutoConfiguration$SpringMvcFoundOnClasspathConfiguration]: Constructor threw exception; nested exception is org.springframework.cloud.gateway.support.MvcFoundOnClasspathException
+[30m2022-02-05 17:36:10,065[0;39m [34m[0;39m[32m INFO[0;39m [[34mmain[0;39m] [33morg.apache.juli.logging.DirectJDKLog[0;39m : Stopping service [Tomcat]
+[30m2022-02-05 17:36:10,087[0;39m [34m[0;39m[32m INFO[0;39m [[34mmain[0;39m] [33morg.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener[0;39m : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[30m2022-02-05 17:36:10,113[0;39m [1;31m[0;39m[31mERROR[0;39m [[34mmain[0;39m] [33morg.springframework.boot.diagnostics.LoggingFailureAnalysisReporter[0;39m : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Spring MVC found on classpath, which is incompatible with Spring Cloud Gateway.
+
+Action:
+
+Please set spring.main.web-application-type=reactive or remove spring-boot-starter-web dependency.
+
+[30m2022-02-05 17:37:16,845[0;39m [34m[0;39m[32m INFO[0;39m [[34mmain[0;39m] [33morg.springframework.boot.StartupInfoLogger[0;39m : Starting MyApiGatewayApplication using Java 1.8.0_202 on DESKTOP-MFJBM3L with PID 8520 (C:\Users\werty\3D Objects\flutterProject\herokuDeployments\my-api-gateway\target\classes started by werty in C:\Users\werty\3D Objects\flutterProject\herokuDeployments\my-api-gateway)
+[30m2022-02-05 17:37:16,848[0;39m [34m[0;39m[32m INFO[0;39m [[34mmain[0;39m] [33morg.springframework.boot.SpringApplication[0;39m : No active profile set, falling back to default profiles: default
+[30m2022-02-05 17:37:18,186[0;39m [34m[0;39m[32m INFO[0;39m [[34mmain[0;39m] [33morg.springframework.cloud.context.scope.GenericScope[0;39m : BeanFactory id=ab2dc893-b525-3b8c-885c-493c9b5ba9cc
+[30m2022-02-05 17:37:18,252[0;39m [34m[0;39m[32m INFO[0;39m [[34mmain[0;39m] [33morg.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[0;39m : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[30m2022-02-05 17:37:18,254[0;39m [34m[0;39m[32m INFO[0;39m [[34mmain[0;39m] [33morg.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[0;39m : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[30m2022-02-05 17:37:18,259[0;39m [34m[0;39m[32m INFO[0;39m [[34mmain[0;39m] [33morg.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[0;39m : Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[30m2022-02-05 17:37:18,430[0;39m [34m[0;39m[32m INFO[0;39m [[34mmain[0;39m] [33morg.springframework.boot.web.embedded.tomcat.TomcatWebServer[0;39m : Tomcat initialized with port(s): 8080 (http)
+[30m2022-02-05 17:37:18,439[0;39m [34m[0;39m[32m INFO[0;39m [[34mmain[0;39m] [33morg.apache.juli.logging.DirectJDKLog[0;39m : Starting service [Tomcat]
+[30m2022-02-05 17:37:18,440[0;39m [34m[0;39m[32m INFO[0;39m [[34mmain[0;39m] [33morg.apache.juli.logging.DirectJDKLog[0;39m : Starting Servlet engine: [Apache Tomcat/9.0.56]
+[30m2022-02-05 17:37:20,494[0;39m [34m[0;39m[32m INFO[0;39m [[34mmain[0;39m] [33morg.springframework.cloud.gateway.route.RouteDefinitionRouteLocator[0;39m : Loaded RoutePredicateFactory [After]
+[30m2022-02-05 17:37:20,495[0;39m [34m[0;39m[32m INFO[0;39m [[34mmain[0;39m] [33morg.springframework.cloud.gateway.route.RouteDefinitionRouteLocator[0;39m : Loaded RoutePredicateFactory [Before]
+[30m2022-02-05 17:37:20,495[0;39m [34m[0;39m[32m INFO[0;39m [[34mmain[0;39m] [33morg.springframework.cloud.gateway.route.RouteDefinitionRouteLocator[0;39m : Loaded RoutePredicateFactory [Between]
+[30m2022-02-05 17:37:20,495[0;39m [34m[0;39m[32m INFO[0;39m [[34mmain[0;39m] [33morg.springframework.cloud.gateway.route.RouteDefinitionRouteLocator[0;39m : Loaded RoutePredicateFactory [Cookie]
+[30m2022-02-05 17:37:20,496[0;39m [34m[0;39m[32m INFO[0;39m [[34mmain[0;39m] [33morg.springframework.cloud.gateway.route.RouteDefinitionRouteLocator[0;39m : Loaded RoutePredicateFactory [Header]
+[30m2022-02-05 17:37:20,496[0;39m [34m[0;39m[32m INFO[0;39m [[34mmain[0;39m] [33morg.springframework.cloud.gateway.route.RouteDefinitionRouteLocator[0;39m : Loaded RoutePredicateFactory [Host]
+[30m2022-02-05 17:37:20,497[0;39m [34m[0;39m[32m INFO[0;39m [[34mmain[0;39m] [33morg.springframework.cloud.gateway.route.RouteDefinitionRouteLocator[0;39m : Loaded RoutePredicateFactory [Method]
+[30m2022-02-05 17:37:20,497[0;39m [34m[0;39m[32m INFO[0;39m [[34mmain[0;39m] [33morg.springframework.cloud.gateway.route.RouteDefinitionRouteLocator[0;39m : Loaded RoutePredicateFactory [Path]
+[30m2022-02-05 17:37:20,498[0;39m [34m[0;39m[32m INFO[0;39m [[34mmain[0;39m] [33morg.springframework.cloud.gateway.route.RouteDefinitionRouteLocator[0;39m : Loaded RoutePredicateFactory [Query]
+[30m2022-02-05 17:37:20,498[0;39m [34m[0;39m[32m INFO[0;39m [[34mmain[0;39m] [33morg.springframework.cloud.gateway.route.RouteDefinitionRouteLocator[0;39m : Loaded RoutePredicateFactory [ReadBody]
+[30m2022-02-05 17:37:20,499[0;39m [34m[0;39m[32m INFO[0;39m [[34mmain[0;39m] [33morg.springframework.cloud.gateway.route.RouteDefinitionRouteLocator[0;39m : Loaded RoutePredicateFactory [RemoteAddr]
+[30m2022-02-05 17:37:20,499[0;39m [34m[0;39m[32m INFO[0;39m [[34mmain[0;39m] [33morg.springframework.cloud.gateway.route.RouteDefinitionRouteLocator[0;39m : Loaded RoutePredicateFactory [Weight]
+[30m2022-02-05 17:37:20,499[0;39m [34m[0;39m[32m INFO[0;39m [[34mmain[0;39m] [33morg.springframework.cloud.gateway.route.RouteDefinitionRouteLocator[0;39m : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+[30m2022-02-05 17:37:21,209[0;39m [34m[0;39m[32m INFO[0;39m [[34mmain[0;39m] [33morg.springframework.boot.actuate.endpoint.web.EndpointLinksResolver[0;39m : Exposing 18 endpoint(s) beneath base path '/actuator'
+[30m2022-02-05 17:37:21,449[0;39m [34m[0;39m[32m INFO[0;39m [[34mmain[0;39m] [33morg.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration[0;39m : Eureka HTTP Client uses RestTemplate.
+[30m2022-02-05 17:37:21,501[0;39m [31m[0;39m[33m WARN[0;39m [[34mmain[0;39m] [33morg.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger[0;39m : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+[30m2022-02-05 17:37:21,578[0;39m [34m[0;39m[32m INFO[0;39m [[34mmain[0;39m] [33morg.springframework.cloud.netflix.eureka.InstanceInfoFactory[0;39m : Setting initial instance status as: STARTING
+[30m2022-02-05 17:37:21,631[0;39m [34m[0;39m[32m INFO[0;39m [[34mmain[0;39m] [33mcom.netflix.discovery.DiscoveryClient[0;39m : Initializing Eureka in region us-east-1
+[30m2022-02-05 17:37:21,637[0;39m [34m[0;39m[32m INFO[0;39m [[34mmain[0;39m] [33mcom.netflix.discovery.shared.resolver.aws.ConfigClusterResolver[0;39m : Resolving eureka endpoints via configuration
+[30m2022-02-05 17:37:21,665[0;39m [34m[0;39m[32m INFO[0;39m [[34mmain[0;39m] [33mcom.netflix.discovery.DiscoveryClient[0;39m : Disable delta property : false
+[30m2022-02-05 17:37:21,666[0;39m [34m[0;39m[32m INFO[0;39m [[34mmain[0;39m] [33mcom.netflix.discovery.DiscoveryClient[0;39m : Single vip registry refresh property : null
+[30m2022-02-05 17:37:21,666[0;39m [34m[0;39m[32m INFO[0;39m [[34mmain[0;39m] [33mcom.netflix.discovery.DiscoveryClient[0;39m : Force full registry fetch : false
+[30m2022-02-05 17:37:21,666[0;39m [34m[0;39m[32m INFO[0;39m [[34mmain[0;39m] [33mcom.netflix.discovery.DiscoveryClient[0;39m : Application is null : false
+[30m2022-02-05 17:37:21,667[0;39m [34m[0;39m[32m INFO[0;39m [[34mmain[0;39m] [33mcom.netflix.discovery.DiscoveryClient[0;39m : Registered Applications size is zero : true
+[30m2022-02-05 17:37:21,667[0;39m [34m[0;39m[32m INFO[0;39m [[34mmain[0;39m] [33mcom.netflix.discovery.DiscoveryClient[0;39m : Application version is -1: true
+[30m2022-02-05 17:37:21,667[0;39m [34m[0;39m[32m INFO[0;39m [[34mmain[0;39m] [33mcom.netflix.discovery.DiscoveryClient[0;39m : Getting all instance registry info from the eureka server
+[30m2022-02-05 17:37:23,219[0;39m [34m[0;39m[32m INFO[0;39m [[34mmain[0;39m] [33mcom.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient[0;39m : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='https://my-discovery-service.herokuapp.com/eureka/}, exception=Could not extract response: no suitable HttpMessageConverter found for response type [class org.springframework.cloud.netflix.eureka.http.EurekaApplications] and content type [text/html;charset=utf-8] stacktrace=org.springframework.web.client.UnknownContentTypeException: Could not extract response: no suitable HttpMessageConverter found for response type [class org.springframework.cloud.netflix.eureka.http.EurekaApplications] and content type [text/html;charset=utf-8]
+	at org.springframework.web.client.HttpMessageConverterExtractor.extractData(HttpMessageConverterExtractor.java:126)
+	at org.springframework.web.client.RestTemplate$ResponseEntityResponseExtractor.extractData(RestTemplate.java:1037)
+	at org.springframework.web.client.RestTemplate$ResponseEntityResponseExtractor.extractData(RestTemplate.java:1020)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:778)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getApplicationsInternal(RestTemplateEurekaHttpClient.java:145)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getApplications(RestTemplateEurekaHttpClient.java:135)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(DiscoveryClient.java:1101)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1014)
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:441)
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:283)
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:279)
+	at org.springframework.cloud.netflix.eureka.CloudEurekaClient.<init>(CloudEurekaClient.java:66)
+	at org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration.eurekaClient(EurekaClientAutoConfiguration.java:295)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$1(AbstractBeanFactory.java:374)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.getBean(GenericScope.java:376)
+	at org.springframework.cloud.context.scope.GenericScope.get(GenericScope.java:179)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:371)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.aop.target.SimpleBeanTargetSource.getTarget(SimpleBeanTargetSource.java:35)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration.getTargetObject(EurekaRegistration.java:127)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration.getEurekaClient(EurekaRegistration.java:115)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:282)
+	at org.springframework.cloud.context.scope.GenericScope$LockedScopedProxyFactoryBean.invoke(GenericScope.java:485)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration$$EnhancerBySpringCGLIB$$9b9a2da8.getEurekaClient(<generated>)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.maybeInitializeClient(EurekaServiceRegistry.java:54)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.register(EurekaServiceRegistry.java:38)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration.start(EurekaAutoServiceRegistration.java:83)
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178)
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54)
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356)
+	at java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:64)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:765)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at jee.ensas.myapigateway.MyApiGatewayApplication.main(MyApiGatewayApplication.java:13)
+
+[30m2022-02-05 17:37:23,220[0;39m [31m[0;39m[33m WARN[0;39m [[34mmain[0;39m] [33mcom.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient[0;39m : Request execution failed with message: Could not extract response: no suitable HttpMessageConverter found for response type [class org.springframework.cloud.netflix.eureka.http.EurekaApplications] and content type [text/html;charset=utf-8]
+[30m2022-02-05 17:37:23,223[0;39m [34m[0;39m[32m INFO[0;39m [[34mmain[0;39m] [33mcom.netflix.discovery.DiscoveryClient[0;39m : DiscoveryClient_API-GATEWAY/DESKTOP-MFJBM3L.mshome.net:API-GATEWAY - was unable to refresh its cache! This periodic background refresh will be retried in 30 seconds. status = Cannot execute request on any known server stacktrace = com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(DiscoveryClient.java:1101)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1014)
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:441)
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:283)
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:279)
+	at org.springframework.cloud.netflix.eureka.CloudEurekaClient.<init>(CloudEurekaClient.java:66)
+	at org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration.eurekaClient(EurekaClientAutoConfiguration.java:295)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:638)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$1(AbstractBeanFactory.java:374)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.getBean(GenericScope.java:376)
+	at org.springframework.cloud.context.scope.GenericScope.get(GenericScope.java:179)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:371)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.aop.target.SimpleBeanTargetSource.getTarget(SimpleBeanTargetSource.java:35)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration.getTargetObject(EurekaRegistration.java:127)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration.getEurekaClient(EurekaRegistration.java:115)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:282)
+	at org.springframework.cloud.context.scope.GenericScope$LockedScopedProxyFactoryBean.invoke(GenericScope.java:485)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaRegistration$$EnhancerBySpringCGLIB$$9b9a2da8.getEurekaClient(<generated>)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.maybeInitializeClient(EurekaServiceRegistry.java:54)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.register(EurekaServiceRegistry.java:38)
+	at org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration.start(EurekaAutoServiceRegistration.java:83)
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178)
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54)
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356)
+	at java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:64)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:765)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at jee.ensas.myapigateway.MyApiGatewayApplication.main(MyApiGatewayApplication.java:13)
+
+[30m2022-02-05 17:37:23,224[0;39m [34m[0;39m[32m INFO[0;39m [[34mmain[0;39m] [33mcom.netflix.discovery.DiscoveryClient[0;39m : Initial registry fetch from primary servers failed
+[30m2022-02-05 17:37:23,224[0;39m [31m[0;39m[33m WARN[0;39m [[34mmain[0;39m] [33mcom.netflix.discovery.DiscoveryClient$1[0;39m : Using default backup registry implementation which does not do anything.
+[30m2022-02-05 17:37:23,225[0;39m [34m[0;39m[32m INFO[0;39m [[34mmain[0;39m] [33mcom.netflix.discovery.DiscoveryClient[0;39m : Initial registry fetch from backup servers failed
+[30m2022-02-05 17:37:23,227[0;39m [34m[0;39m[32m INFO[0;39m [[34mmain[0;39m] [33mcom.netflix.discovery.DiscoveryClient[0;39m : Starting heartbeat executor: renew interval is: 30
+[30m2022-02-05 17:37:23,230[0;39m [34m[0;39m[32m INFO[0;39m [[34mmain[0;39m] [33mcom.netflix.discovery.InstanceInfoReplicator[0;39m : InstanceInfoReplicator onDemand update allowed rate per min is 4
+[30m2022-02-05 17:37:23,236[0;39m [34m[0;39m[32m INFO[0;39m [[34mmain[0;39m] [33mcom.netflix.discovery.DiscoveryClient[0;39m : Discovery Client initialized at timestamp 1644079043234 with initial instances count: 0
+[30m2022-02-05 17:37:23,238[0;39m [34m[0;39m[32m INFO[0;39m [[34mmain[0;39m] [33morg.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry[0;39m : Registering application API-GATEWAY with eureka with status UP
+[30m2022-02-05 17:37:23,239[0;39m [34m[0;39m[32m INFO[0;39m [[34mmain[0;39m] [33mcom.netflix.discovery.DiscoveryClient$3[0;39m : Saw local status change event StatusChangeEvent [timestamp=1644079043239, current=UP, previous=STARTING]
+[30m2022-02-05 17:37:23,241[0;39m [34m[0;39m[32m INFO[0;39m [[34mDiscoveryClient-InstanceInfoReplicator-0[0;39m] [33mcom.netflix.discovery.DiscoveryClient[0;39m : DiscoveryClient_API-GATEWAY/DESKTOP-MFJBM3L.mshome.net:API-GATEWAY: registering service...
+[30m2022-02-05 17:37:23,403[0;39m [34m[0;39m[32m INFO[0;39m [[34mmain[0;39m] [33morg.springframework.boot.web.embedded.tomcat.TomcatWebServer[0;39m : Tomcat started on port(s): 8080 (http) with context path ''
+[30m2022-02-05 17:37:23,405[0;39m [34m[0;39m[32m INFO[0;39m [[34mmain[0;39m] [33morg.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration[0;39m : Updating port to 8080
+[30m2022-02-05 17:37:23,886[0;39m [34m[0;39m[32m INFO[0;39m [[34mDiscoveryClient-InstanceInfoReplicator-0[0;39m] [33mcom.netflix.discovery.DiscoveryClient[0;39m : DiscoveryClient_API-GATEWAY/DESKTOP-MFJBM3L.mshome.net:API-GATEWAY - registration status: 404
+[30m2022-02-05 17:37:24,350[0;39m [34m[0;39m[32m INFO[0;39m [[34mmain[0;39m] [33morg.springframework.boot.StartupInfoLogger[0;39m : Started MyApiGatewayApplication in 8.715 seconds (JVM running for 9.941)
+[30m2022-02-05 17:37:24,444[0;39m [31m[0;39m[33m WARN[0;39m [[34mregistrationTask1[0;39m] [33morg.springframework.cloud.loadbalancer.core.RoundRobinLoadBalancer[0;39m : No servers available for service: my-admin-server-t.herokuapp.com
+[30m2022-02-05 17:37:24,445[0;39m [31m[0;39m[33m WARN[0;39m [[34mregistrationTask1[0;39m] [33morg.springframework.cloud.client.loadbalancer.reactive.ReactorLoadBalancerExchangeFilterFunction[0;39m : LoadBalancer does not contain an instance for the service my-admin-server-t.herokuapp.com
+[30m2022-02-05 17:37:24,477[0;39m [31m[0;39m[33m WARN[0;39m [[34mregistrationTask1[0;39m] [33mde.codecentric.boot.admin.client.registration.DefaultApplicationRegistrator[0;39m : Failed to register application as Application(name=API-GATEWAY, managementUrl=https://my-api-gateway-ttt.herokuapp.com/actuator, healthUrl=https://my-api-gateway-ttt.herokuapp.com/actuator/health, serviceUrl=https://my-api-gateway-ttt.herokuapp.com) at spring-boot-admin ([https://my-admin-server-t.herokuapp.com/instances]): 503 Service Unavailable from UNKNOWN . Further attempts are logged on DEBUG level
+[30m2022-02-05 17:37:34,362[0;39m [31m[0;39m[33m WARN[0;39m [[34mregistrationTask1[0;39m] [33morg.springframework.cloud.loadbalancer.core.RoundRobinLoadBalancer[0;39m : No servers available for service: my-admin-server-t.herokuapp.com
+[30m2022-02-05 17:37:34,363[0;39m [31m[0;39m[33m WARN[0;39m [[34mregistrationTask1[0;39m] [33morg.springframework.cloud.client.loadbalancer.reactive.ReactorLoadBalancerExchangeFilterFunction[0;39m : LoadBalancer does not contain an instance for the service my-admin-server-t.herokuapp.com
+[30m2022-02-05 17:37:44,366[0;39m [31m[0;39m[33m WARN[0;39m [[34mregistrationTask1[0;39m] [33morg.springframework.cloud.loadbalancer.core.RoundRobinLoadBalancer[0;39m : No servers available for service: my-admin-server-t.herokuapp.com
+[30m2022-02-05 17:37:44,367[0;39m [31m[0;39m[33m WARN[0;39m [[34mregistrationTask1[0;39m] [33morg.springframework.cloud.client.loadbalancer.reactive.ReactorLoadBalancerExchangeFilterFunction[0;39m : LoadBalancer does not contain an instance for the service my-admin-server-t.herokuapp.com
+[30m2022-02-05 17:37:53,231[0;39m [34m[0;39m[32m INFO[0;39m [[34mDiscoveryClient-CacheRefreshExecutor-0[0;39m] [33mcom.netflix.discovery.DiscoveryClient[0;39m : Disable delta property : false
+[30m2022-02-05 17:37:53,232[0;39m [34m[0;39m[32m INFO[0;39m [[34mDiscoveryClient-CacheRefreshExecutor-0[0;39m] [33mcom.netflix.discovery.DiscoveryClient[0;39m : Single vip registry refresh property : null
+[30m2022-02-05 17:37:53,232[0;39m [34m[0;39m[32m INFO[0;39m [[34mDiscoveryClient-CacheRefreshExecutor-0[0;39m] [33mcom.netflix.discovery.DiscoveryClient[0;39m : Force full registry fetch : false
+[30m2022-02-05 17:37:53,232[0;39m [34m[0;39m[32m INFO[0;39m [[34mDiscoveryClient-CacheRefreshExecutor-0[0;39m] [33mcom.netflix.discovery.DiscoveryClient[0;39m : Application is null : false
+[30m2022-02-05 17:37:53,233[0;39m [34m[0;39m[32m INFO[0;39m [[34mDiscoveryClient-CacheRefreshExecutor-0[0;39m] [33mcom.netflix.discovery.DiscoveryClient[0;39m : Registered Applications size is zero : true
+[30m2022-02-05 17:37:53,233[0;39m [34m[0;39m[32m INFO[0;39m [[34mDiscoveryClient-CacheRefreshExecutor-0[0;39m] [33mcom.netflix.discovery.DiscoveryClient[0;39m : Application version is -1: true
+[30m2022-02-05 17:37:53,233[0;39m [34m[0;39m[32m INFO[0;39m [[34mDiscoveryClient-CacheRefreshExecutor-0[0;39m] [33mcom.netflix.discovery.DiscoveryClient[0;39m : Getting all instance registry info from the eureka server
+[30m2022-02-05 17:37:53,915[0;39m [34m[0;39m[32m INFO[0;39m [[34mDiscoveryClient-CacheRefreshExecutor-0[0;39m] [33mcom.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient[0;39m : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='https://my-discovery-service.herokuapp.com/eureka/}, exception=Could not extract response: no suitable HttpMessageConverter found for response type [class org.springframework.cloud.netflix.eureka.http.EurekaApplications] and content type [text/html;charset=utf-8] stacktrace=org.springframework.web.client.UnknownContentTypeException: Could not extract response: no suitable HttpMessageConverter found for response type [class org.springframework.cloud.netflix.eureka.http.EurekaApplications] and content type [text/html;charset=utf-8]
+	at org.springframework.web.client.HttpMessageConverterExtractor.extractData(HttpMessageConverterExtractor.java:126)
+	at org.springframework.web.client.RestTemplate$ResponseEntityResponseExtractor.extractData(RestTemplate.java:1037)
+	at org.springframework.web.client.RestTemplate$ResponseEntityResponseExtractor.extractData(RestTemplate.java:1020)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:778)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getApplicationsInternal(RestTemplateEurekaHttpClient.java:145)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getApplications(RestTemplateEurekaHttpClient.java:135)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(DiscoveryClient.java:1101)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1014)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1531)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1498)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+[30m2022-02-05 17:37:53,916[0;39m [31m[0;39m[33m WARN[0;39m [[34mDiscoveryClient-CacheRefreshExecutor-0[0;39m] [33mcom.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient[0;39m : Request execution failed with message: Could not extract response: no suitable HttpMessageConverter found for response type [class org.springframework.cloud.netflix.eureka.http.EurekaApplications] and content type [text/html;charset=utf-8]
+[30m2022-02-05 17:37:53,916[0;39m [34m[0;39m[32m INFO[0;39m [[34mDiscoveryClient-CacheRefreshExecutor-0[0;39m] [33mcom.netflix.discovery.DiscoveryClient[0;39m : DiscoveryClient_API-GATEWAY/DESKTOP-MFJBM3L.mshome.net:API-GATEWAY - was unable to refresh its cache! This periodic background refresh will be retried in 30 seconds. status = Cannot execute request on any known server stacktrace = com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(DiscoveryClient.java:1101)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1014)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1531)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1498)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+[30m2022-02-05 17:37:53,939[0;39m [34m[0;39m[32m INFO[0;39m [[34mDiscoveryClient-HeartbeatExecutor-0[0;39m] [33mcom.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient[0;39m : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='https://my-discovery-service.herokuapp.com/eureka/} exception=Could not extract response: no suitable HttpMessageConverter found for response type [class com.netflix.appinfo.InstanceInfo] and content type [text/html;charset=utf-8] stacktrace=org.springframework.web.client.UnknownContentTypeException: Could not extract response: no suitable HttpMessageConverter found for response type [class com.netflix.appinfo.InstanceInfo] and content type [text/html;charset=utf-8]
+	at org.springframework.web.client.HttpMessageConverterExtractor.extractData(HttpMessageConverterExtractor.java:126)
+	at org.springframework.web.client.RestTemplate$ResponseEntityResponseExtractor.extractData(RestTemplate.java:1037)
+	at org.springframework.web.client.RestTemplate$ResponseEntityResponseExtractor.extractData(RestTemplate.java:1020)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:778)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.sendHeartBeat(RestTemplateEurekaHttpClient.java:99)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:91)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:893)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1457)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+[30m2022-02-05 17:37:53,939[0;39m [31m[0;39m[33m WARN[0;39m [[34mDiscoveryClient-HeartbeatExecutor-0[0;39m] [33mcom.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient[0;39m : Request execution failed with message: Could not extract response: no suitable HttpMessageConverter found for response type [class com.netflix.appinfo.InstanceInfo] and content type [text/html;charset=utf-8]
+[30m2022-02-05 17:37:54,371[0;39m [31m[0;39m[33m WARN[0;39m [[34mregistrationTask1[0;39m] [33morg.springframework.cloud.loadbalancer.core.RoundRobinLoadBalancer[0;39m : No servers available for service: my-admin-server-t.herokuapp.com
+[30m2022-02-05 17:37:54,373[0;39m [31m[0;39m[33m WARN[0;39m [[34mregistrationTask1[0;39m] [33morg.springframework.cloud.client.loadbalancer.reactive.ReactorLoadBalancerExchangeFilterFunction[0;39m : LoadBalancer does not contain an instance for the service my-admin-server-t.herokuapp.com
+[30m2022-02-05 17:37:54,504[0;39m [34m[0;39m[32m INFO[0;39m [[34mDiscoveryClient-HeartbeatExecutor-0[0;39m] [33mcom.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient[0;39m : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='https://my-discovery-service.herokuapp.com/eureka/}, exception=Could not extract response: no suitable HttpMessageConverter found for response type [class com.netflix.appinfo.InstanceInfo] and content type [text/html;charset=utf-8] stacktrace=org.springframework.web.client.UnknownContentTypeException: Could not extract response: no suitable HttpMessageConverter found for response type [class com.netflix.appinfo.InstanceInfo] and content type [text/html;charset=utf-8]
+	at org.springframework.web.client.HttpMessageConverterExtractor.extractData(HttpMessageConverterExtractor.java:126)
+	at org.springframework.web.client.RestTemplate$ResponseEntityResponseExtractor.extractData(RestTemplate.java:1037)
+	at org.springframework.web.client.RestTemplate$ResponseEntityResponseExtractor.extractData(RestTemplate.java:1020)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:778)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.sendHeartBeat(RestTemplateEurekaHttpClient.java:99)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:893)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1457)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+[30m2022-02-05 17:37:54,504[0;39m [31m[0;39m[33m WARN[0;39m [[34mDiscoveryClient-HeartbeatExecutor-0[0;39m] [33mcom.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient[0;39m : Request execution failed with message: Could not extract response: no suitable HttpMessageConverter found for response type [class com.netflix.appinfo.InstanceInfo] and content type [text/html;charset=utf-8]
+[30m2022-02-05 17:37:54,507[0;39m [1;31m[0;39m[31mERROR[0;39m [[34mDiscoveryClient-HeartbeatExecutor-0[0;39m] [33mcom.netflix.discovery.DiscoveryClient[0;39m : DiscoveryClient_API-GATEWAY/DESKTOP-MFJBM3L.mshome.net:API-GATEWAY - was unable to send heartbeat!
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:893)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1457)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[30m2022-02-05 17:38:04,371[0;39m [31m[0;39m[33m WARN[0;39m [[34mregistrationTask1[0;39m] [33morg.springframework.cloud.loadbalancer.core.RoundRobinLoadBalancer[0;39m : No servers available for service: my-admin-server-t.herokuapp.com
+[30m2022-02-05 17:38:04,371[0;39m [31m[0;39m[33m WARN[0;39m [[34mregistrationTask1[0;39m] [33morg.springframework.cloud.client.loadbalancer.reactive.ReactorLoadBalancerExchangeFilterFunction[0;39m : LoadBalancer does not contain an instance for the service my-admin-server-t.herokuapp.com
+[30m2022-02-05 17:38:14,372[0;39m [31m[0;39m[33m WARN[0;39m [[34mregistrationTask1[0;39m] [33morg.springframework.cloud.loadbalancer.core.RoundRobinLoadBalancer[0;39m : No servers available for service: my-admin-server-t.herokuapp.com
+[30m2022-02-05 17:38:14,373[0;39m [31m[0;39m[33m WARN[0;39m [[34mregistrationTask1[0;39m] [33morg.springframework.cloud.client.loadbalancer.reactive.ReactorLoadBalancerExchangeFilterFunction[0;39m : LoadBalancer does not contain an instance for the service my-admin-server-t.herokuapp.com
+[30m2022-02-05 17:38:23,930[0;39m [34m[0;39m[32m INFO[0;39m [[34mDiscoveryClient-CacheRefreshExecutor-0[0;39m] [33mcom.netflix.discovery.DiscoveryClient[0;39m : Disable delta property : false
+[30m2022-02-05 17:38:23,930[0;39m [34m[0;39m[32m INFO[0;39m [[34mDiscoveryClient-CacheRefreshExecutor-0[0;39m] [33mcom.netflix.discovery.DiscoveryClient[0;39m : Single vip registry refresh property : null
+[30m2022-02-05 17:38:23,930[0;39m [34m[0;39m[32m INFO[0;39m [[34mDiscoveryClient-CacheRefreshExecutor-0[0;39m] [33mcom.netflix.discovery.DiscoveryClient[0;39m : Force full registry fetch : false
+[30m2022-02-05 17:38:23,931[0;39m [34m[0;39m[32m INFO[0;39m [[34mDiscoveryClient-CacheRefreshExecutor-0[0;39m] [33mcom.netflix.discovery.DiscoveryClient[0;39m : Application is null : false
+[30m2022-02-05 17:38:23,931[0;39m [34m[0;39m[32m INFO[0;39m [[34mDiscoveryClient-CacheRefreshExecutor-0[0;39m] [33mcom.netflix.discovery.DiscoveryClient[0;39m : Registered Applications size is zero : true
+[30m2022-02-05 17:38:23,931[0;39m [34m[0;39m[32m INFO[0;39m [[34mDiscoveryClient-CacheRefreshExecutor-0[0;39m] [33mcom.netflix.discovery.DiscoveryClient[0;39m : Application version is -1: true
+[30m2022-02-05 17:38:23,931[0;39m [34m[0;39m[32m INFO[0;39m [[34mDiscoveryClient-CacheRefreshExecutor-0[0;39m] [33mcom.netflix.discovery.DiscoveryClient[0;39m : Getting all instance registry info from the eureka server
+[30m2022-02-05 17:38:24,359[0;39m [31m[0;39m[33m WARN[0;39m [[34mregistrationTask1[0;39m] [33morg.springframework.cloud.loadbalancer.core.RoundRobinLoadBalancer[0;39m : No servers available for service: my-admin-server-t.herokuapp.com
+[30m2022-02-05 17:38:24,359[0;39m [31m[0;39m[33m WARN[0;39m [[34mregistrationTask1[0;39m] [33morg.springframework.cloud.client.loadbalancer.reactive.ReactorLoadBalancerExchangeFilterFunction[0;39m : LoadBalancer does not contain an instance for the service my-admin-server-t.herokuapp.com
+[30m2022-02-05 17:38:24,523[0;39m [34m[0;39m[32m INFO[0;39m [[34mDiscoveryClient-CacheRefreshExecutor-0[0;39m] [33mcom.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient[0;39m : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='https://my-discovery-service.herokuapp.com/eureka/}, exception=Could not extract response: no suitable HttpMessageConverter found for response type [class org.springframework.cloud.netflix.eureka.http.EurekaApplications] and content type [text/html;charset=utf-8] stacktrace=org.springframework.web.client.UnknownContentTypeException: Could not extract response: no suitable HttpMessageConverter found for response type [class org.springframework.cloud.netflix.eureka.http.EurekaApplications] and content type [text/html;charset=utf-8]
+	at org.springframework.web.client.HttpMessageConverterExtractor.extractData(HttpMessageConverterExtractor.java:126)
+	at org.springframework.web.client.RestTemplate$ResponseEntityResponseExtractor.extractData(RestTemplate.java:1037)
+	at org.springframework.web.client.RestTemplate$ResponseEntityResponseExtractor.extractData(RestTemplate.java:1020)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:778)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getApplicationsInternal(RestTemplateEurekaHttpClient.java:145)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getApplications(RestTemplateEurekaHttpClient.java:135)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(DiscoveryClient.java:1101)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1014)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1531)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1498)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+[30m2022-02-05 17:38:24,524[0;39m [31m[0;39m[33m WARN[0;39m [[34mDiscoveryClient-CacheRefreshExecutor-0[0;39m] [33mcom.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient[0;39m : Request execution failed with message: Could not extract response: no suitable HttpMessageConverter found for response type [class org.springframework.cloud.netflix.eureka.http.EurekaApplications] and content type [text/html;charset=utf-8]
+[30m2022-02-05 17:38:24,524[0;39m [34m[0;39m[32m INFO[0;39m [[34mDiscoveryClient-CacheRefreshExecutor-0[0;39m] [33mcom.netflix.discovery.DiscoveryClient[0;39m : DiscoveryClient_API-GATEWAY/DESKTOP-MFJBM3L.mshome.net:API-GATEWAY - was unable to refresh its cache! This periodic background refresh will be retried in 30 seconds. status = Cannot execute request on any known server stacktrace = com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(DiscoveryClient.java:1101)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1014)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1531)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1498)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+[30m2022-02-05 17:38:25,139[0;39m [34m[0;39m[32m INFO[0;39m [[34mDiscoveryClient-HeartbeatExecutor-0[0;39m] [33mcom.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient[0;39m : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='https://my-discovery-service.herokuapp.com/eureka/}, exception=Could not extract response: no suitable HttpMessageConverter found for response type [class com.netflix.appinfo.InstanceInfo] and content type [text/html;charset=utf-8] stacktrace=org.springframework.web.client.UnknownContentTypeException: Could not extract response: no suitable HttpMessageConverter found for response type [class com.netflix.appinfo.InstanceInfo] and content type [text/html;charset=utf-8]
+	at org.springframework.web.client.HttpMessageConverterExtractor.extractData(HttpMessageConverterExtractor.java:126)
+	at org.springframework.web.client.RestTemplate$ResponseEntityResponseExtractor.extractData(RestTemplate.java:1037)
+	at org.springframework.web.client.RestTemplate$ResponseEntityResponseExtractor.extractData(RestTemplate.java:1020)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:778)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.sendHeartBeat(RestTemplateEurekaHttpClient.java:99)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:893)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1457)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+[30m2022-02-05 17:38:25,139[0;39m [31m[0;39m[33m WARN[0;39m [[34mDiscoveryClient-HeartbeatExecutor-0[0;39m] [33mcom.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient[0;39m : Request execution failed with message: Could not extract response: no suitable HttpMessageConverter found for response type [class com.netflix.appinfo.InstanceInfo] and content type [text/html;charset=utf-8]
+[30m2022-02-05 17:38:25,139[0;39m [1;31m[0;39m[31mERROR[0;39m [[34mDiscoveryClient-HeartbeatExecutor-0[0;39m] [33mcom.netflix.discovery.DiscoveryClient[0;39m : DiscoveryClient_API-GATEWAY/DESKTOP-MFJBM3L.mshome.net:API-GATEWAY - was unable to send heartbeat!
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:893)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1457)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[30m2022-02-05 17:38:34,362[0;39m [31m[0;39m[33m WARN[0;39m [[34mregistrationTask1[0;39m] [33morg.springframework.cloud.loadbalancer.core.RoundRobinLoadBalancer[0;39m : No servers available for service: my-admin-server-t.herokuapp.com
+[30m2022-02-05 17:38:34,363[0;39m [31m[0;39m[33m WARN[0;39m [[34mregistrationTask1[0;39m] [33morg.springframework.cloud.client.loadbalancer.reactive.ReactorLoadBalancerExchangeFilterFunction[0;39m : LoadBalancer does not contain an instance for the service my-admin-server-t.herokuapp.com
+[30m2022-02-05 17:38:44,370[0;39m [31m[0;39m[33m WARN[0;39m [[34mregistrationTask1[0;39m] [33morg.springframework.cloud.loadbalancer.core.RoundRobinLoadBalancer[0;39m : No servers available for service: my-admin-server-t.herokuapp.com
+[30m2022-02-05 17:38:44,371[0;39m [31m[0;39m[33m WARN[0;39m [[34mregistrationTask1[0;39m] [33morg.springframework.cloud.client.loadbalancer.reactive.ReactorLoadBalancerExchangeFilterFunction[0;39m : LoadBalancer does not contain an instance for the service my-admin-server-t.herokuapp.com
+[30m2022-02-05 17:38:54,375[0;39m [31m[0;39m[33m WARN[0;39m [[34mregistrationTask1[0;39m] [33morg.springframework.cloud.loadbalancer.core.RoundRobinLoadBalancer[0;39m : No servers available for service: my-admin-server-t.herokuapp.com
+[30m2022-02-05 17:38:54,376[0;39m [31m[0;39m[33m WARN[0;39m [[34mregistrationTask1[0;39m] [33morg.springframework.cloud.client.loadbalancer.reactive.ReactorLoadBalancerExchangeFilterFunction[0;39m : LoadBalancer does not contain an instance for the service my-admin-server-t.herokuapp.com
+[30m2022-02-05 17:38:54,539[0;39m [34m[0;39m[32m INFO[0;39m [[34mDiscoveryClient-CacheRefreshExecutor-0[0;39m] [33mcom.netflix.discovery.DiscoveryClient[0;39m : Disable delta property : false
+[30m2022-02-05 17:38:54,539[0;39m [34m[0;39m[32m INFO[0;39m [[34mDiscoveryClient-CacheRefreshExecutor-0[0;39m] [33mcom.netflix.discovery.DiscoveryClient[0;39m : Single vip registry refresh property : null
+[30m2022-02-05 17:38:54,540[0;39m [34m[0;39m[32m INFO[0;39m [[34mDiscoveryClient-CacheRefreshExecutor-0[0;39m] [33mcom.netflix.discovery.DiscoveryClient[0;39m : Force full registry fetch : false
+[30m2022-02-05 17:38:54,540[0;39m [34m[0;39m[32m INFO[0;39m [[34mDiscoveryClient-CacheRefreshExecutor-0[0;39m] [33mcom.netflix.discovery.DiscoveryClient[0;39m : Application is null : false
+[30m2022-02-05 17:38:54,541[0;39m [34m[0;39m[32m INFO[0;39m [[34mDiscoveryClient-CacheRefreshExecutor-0[0;39m] [33mcom.netflix.discovery.DiscoveryClient[0;39m : Registered Applications size is zero : true
+[30m2022-02-05 17:38:54,541[0;39m [34m[0;39m[32m INFO[0;39m [[34mDiscoveryClient-CacheRefreshExecutor-0[0;39m] [33mcom.netflix.discovery.DiscoveryClient[0;39m : Application version is -1: true
+[30m2022-02-05 17:38:54,541[0;39m [34m[0;39m[32m INFO[0;39m [[34mDiscoveryClient-CacheRefreshExecutor-0[0;39m] [33mcom.netflix.discovery.DiscoveryClient[0;39m : Getting all instance registry info from the eureka server
+[30m2022-02-05 17:38:55,257[0;39m [34m[0;39m[32m INFO[0;39m [[34mDiscoveryClient-CacheRefreshExecutor-0[0;39m] [33mcom.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient[0;39m : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='https://my-discovery-service.herokuapp.com/eureka/}, exception=Could not extract response: no suitable HttpMessageConverter found for response type [class org.springframework.cloud.netflix.eureka.http.EurekaApplications] and content type [text/html;charset=utf-8] stacktrace=org.springframework.web.client.UnknownContentTypeException: Could not extract response: no suitable HttpMessageConverter found for response type [class org.springframework.cloud.netflix.eureka.http.EurekaApplications] and content type [text/html;charset=utf-8]
+	at org.springframework.web.client.HttpMessageConverterExtractor.extractData(HttpMessageConverterExtractor.java:126)
+	at org.springframework.web.client.RestTemplate$ResponseEntityResponseExtractor.extractData(RestTemplate.java:1037)
+	at org.springframework.web.client.RestTemplate$ResponseEntityResponseExtractor.extractData(RestTemplate.java:1020)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:778)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getApplicationsInternal(RestTemplateEurekaHttpClient.java:145)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getApplications(RestTemplateEurekaHttpClient.java:135)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(DiscoveryClient.java:1101)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1014)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1531)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1498)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+[30m2022-02-05 17:38:55,258[0;39m [31m[0;39m[33m WARN[0;39m [[34mDiscoveryClient-CacheRefreshExecutor-0[0;39m] [33mcom.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient[0;39m : Request execution failed with message: Could not extract response: no suitable HttpMessageConverter found for response type [class org.springframework.cloud.netflix.eureka.http.EurekaApplications] and content type [text/html;charset=utf-8]
+[30m2022-02-05 17:38:55,258[0;39m [34m[0;39m[32m INFO[0;39m [[34mDiscoveryClient-CacheRefreshExecutor-0[0;39m] [33mcom.netflix.discovery.DiscoveryClient[0;39m : DiscoveryClient_API-GATEWAY/DESKTOP-MFJBM3L.mshome.net:API-GATEWAY - was unable to refresh its cache! This periodic background refresh will be retried in 30 seconds. status = Cannot execute request on any known server stacktrace = com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(DiscoveryClient.java:1101)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1014)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1531)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1498)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+[30m2022-02-05 17:38:55,755[0;39m [34m[0;39m[32m INFO[0;39m [[34mDiscoveryClient-HeartbeatExecutor-0[0;39m] [33mcom.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient[0;39m : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='https://my-discovery-service.herokuapp.com/eureka/}, exception=Could not extract response: no suitable HttpMessageConverter found for response type [class com.netflix.appinfo.InstanceInfo] and content type [text/html;charset=utf-8] stacktrace=org.springframework.web.client.UnknownContentTypeException: Could not extract response: no suitable HttpMessageConverter found for response type [class com.netflix.appinfo.InstanceInfo] and content type [text/html;charset=utf-8]
+	at org.springframework.web.client.HttpMessageConverterExtractor.extractData(HttpMessageConverterExtractor.java:126)
+	at org.springframework.web.client.RestTemplate$ResponseEntityResponseExtractor.extractData(RestTemplate.java:1037)
+	at org.springframework.web.client.RestTemplate$ResponseEntityResponseExtractor.extractData(RestTemplate.java:1020)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:778)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.sendHeartBeat(RestTemplateEurekaHttpClient.java:99)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:893)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1457)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+[30m2022-02-05 17:38:55,755[0;39m [31m[0;39m[33m WARN[0;39m [[34mDiscoveryClient-HeartbeatExecutor-0[0;39m] [33mcom.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient[0;39m : Request execution failed with message: Could not extract response: no suitable HttpMessageConverter found for response type [class com.netflix.appinfo.InstanceInfo] and content type [text/html;charset=utf-8]
+[30m2022-02-05 17:38:55,755[0;39m [1;31m[0;39m[31mERROR[0;39m [[34mDiscoveryClient-HeartbeatExecutor-0[0;39m] [33mcom.netflix.discovery.DiscoveryClient[0;39m : DiscoveryClient_API-GATEWAY/DESKTOP-MFJBM3L.mshome.net:API-GATEWAY - was unable to send heartbeat!
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:893)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1457)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[30m2022-02-05 17:39:04,374[0;39m [31m[0;39m[33m WARN[0;39m [[34mregistrationTask1[0;39m] [33morg.springframework.cloud.loadbalancer.core.RoundRobinLoadBalancer[0;39m : No servers available for service: my-admin-server-t.herokuapp.com
+[30m2022-02-05 17:39:04,374[0;39m [31m[0;39m[33m WARN[0;39m [[34mregistrationTask1[0;39m] [33morg.springframework.cloud.client.loadbalancer.reactive.ReactorLoadBalancerExchangeFilterFunction[0;39m : LoadBalancer does not contain an instance for the service my-admin-server-t.herokuapp.com
+[30m2022-02-05 17:39:14,374[0;39m [31m[0;39m[33m WARN[0;39m [[34mregistrationTask1[0;39m] [33morg.springframework.cloud.loadbalancer.core.RoundRobinLoadBalancer[0;39m : No servers available for service: my-admin-server-t.herokuapp.com
+[30m2022-02-05 17:39:14,374[0;39m [31m[0;39m[33m WARN[0;39m [[34mregistrationTask1[0;39m] [33morg.springframework.cloud.client.loadbalancer.reactive.ReactorLoadBalancerExchangeFilterFunction[0;39m : LoadBalancer does not contain an instance for the service my-admin-server-t.herokuapp.com
+[30m2022-02-05 17:39:24,373[0;39m [31m[0;39m[33m WARN[0;39m [[34mregistrationTask1[0;39m] [33morg.springframework.cloud.loadbalancer.core.RoundRobinLoadBalancer[0;39m : No servers available for service: my-admin-server-t.herokuapp.com
+[30m2022-02-05 17:39:24,373[0;39m [31m[0;39m[33m WARN[0;39m [[34mregistrationTask1[0;39m] [33morg.springframework.cloud.client.loadbalancer.reactive.ReactorLoadBalancerExchangeFilterFunction[0;39m : LoadBalancer does not contain an instance for the service my-admin-server-t.herokuapp.com
+[30m2022-02-05 17:39:25,139[0;39m [34m[0;39m[32m INFO[0;39m [[34mSpringApplicationShutdownHook[0;39m] [33morg.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry[0;39m : Unregistering application API-GATEWAY with eureka with status DOWN
+[30m2022-02-05 17:39:25,139[0;39m [34m[0;39m[32m INFO[0;39m [[34mSpringApplicationShutdownHook[0;39m] [33mcom.netflix.discovery.DiscoveryClient$3[0;39m : Saw local status change event StatusChangeEvent [timestamp=1644079165139, current=DOWN, previous=UP]
+[30m2022-02-05 17:39:25,139[0;39m [34m[0;39m[32m INFO[0;39m [[34mDiscoveryClient-InstanceInfoReplicator-0[0;39m] [33mcom.netflix.discovery.DiscoveryClient[0;39m : DiscoveryClient_API-GATEWAY/DESKTOP-MFJBM3L.mshome.net:API-GATEWAY: registering service...
+[30m2022-02-05 17:39:25,260[0;39m [34m[0;39m[32m INFO[0;39m [[34mDiscoveryClient-CacheRefreshExecutor-0[0;39m] [33mcom.netflix.discovery.DiscoveryClient[0;39m : Disable delta property : false
+[30m2022-02-05 17:39:25,260[0;39m [34m[0;39m[32m INFO[0;39m [[34mDiscoveryClient-CacheRefreshExecutor-0[0;39m] [33mcom.netflix.discovery.DiscoveryClient[0;39m : Single vip registry refresh property : null
+[30m2022-02-05 17:39:25,260[0;39m [34m[0;39m[32m INFO[0;39m [[34mDiscoveryClient-CacheRefreshExecutor-0[0;39m] [33mcom.netflix.discovery.DiscoveryClient[0;39m : Force full registry fetch : false
+[30m2022-02-05 17:39:25,260[0;39m [34m[0;39m[32m INFO[0;39m [[34mDiscoveryClient-CacheRefreshExecutor-0[0;39m] [33mcom.netflix.discovery.DiscoveryClient[0;39m : Application is null : false
+[30m2022-02-05 17:39:25,261[0;39m [34m[0;39m[32m INFO[0;39m [[34mDiscoveryClient-CacheRefreshExecutor-0[0;39m] [33mcom.netflix.discovery.DiscoveryClient[0;39m : Registered Applications size is zero : true
+[30m2022-02-05 17:39:25,261[0;39m [34m[0;39m[32m INFO[0;39m [[34mDiscoveryClient-CacheRefreshExecutor-0[0;39m] [33mcom.netflix.discovery.DiscoveryClient[0;39m : Application version is -1: true
+[30m2022-02-05 17:39:25,261[0;39m [34m[0;39m[32m INFO[0;39m [[34mDiscoveryClient-CacheRefreshExecutor-0[0;39m] [33mcom.netflix.discovery.DiscoveryClient[0;39m : Getting all instance registry info from the eureka server
+[30m2022-02-05 17:39:25,449[0;39m [31m[0;39m[33m WARN[0;39m [[34mSpringApplicationShutdownHook[0;39m] [33morg.springframework.context.support.AbstractApplicationContext[0;39m : Exception thrown from ApplicationListener handling ContextClosedEvent
+org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'registrationListener': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:220)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.getTargetBean(ApplicationListenerMethodAdapter.java:371)
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.doInvoke(ApplicationListenerMethodAdapter.java:336)
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.processEvent(ApplicationListenerMethodAdapter.java:229)
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.onApplicationEvent(ApplicationListenerMethodAdapter.java:166)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:421)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:427)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:378)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1058)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1021)
+	at org.springframework.cloud.context.named.NamedContextFactory.destroy(NamedContextFactory.java:92)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:212)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1161)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1106)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1075)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.doClose(ReactiveWebServerApplicationContext.java:147)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1021)
+	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:137)
+	at java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:106)
+	at java.lang.Thread.run(Thread.java:748)
+[30m2022-02-05 17:39:25,451[0;39m [34m[0;39m[32m INFO[0;39m [[34mSpringApplicationShutdownHook[0;39m] [33mcom.netflix.discovery.DiscoveryClient[0;39m : Shutting down DiscoveryClient ...
+[30m2022-02-05 17:39:25,723[0;39m [34m[0;39m[32m INFO[0;39m [[34mDiscoveryClient-InstanceInfoReplicator-0[0;39m] [33mcom.netflix.discovery.DiscoveryClient[0;39m : DiscoveryClient_API-GATEWAY/DESKTOP-MFJBM3L.mshome.net:API-GATEWAY - registration status: 404
+[30m2022-02-05 17:39:25,724[0;39m [31m[0;39m[33m WARN[0;39m [[34mDiscoveryClient-0[0;39m] [33mcom.netflix.discovery.TimedSupervisorTask[0;39m : task supervisor shutting down, can't accept the task
+[30m2022-02-05 17:39:25,724[0;39m [34m[0;39m[32m INFO[0;39m [[34mSpringApplicationShutdownHook[0;39m] [33mcom.netflix.discovery.DiscoveryClient[0;39m : Unregistering ...
+[30m2022-02-05 17:39:25,735[0;39m [34m[0;39m[32m INFO[0;39m [[34mSpringApplicationShutdownHook[0;39m] [33mcom.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient[0;39m : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='https://my-discovery-service.herokuapp.com/eureka/} exception=I/O error on DELETE request for "https://my-discovery-service.herokuapp.com/eureka/apps/API-GATEWAY/DESKTOP-MFJBM3L.mshome.net:API-GATEWAY": my-discovery-service.herokuapp.com:443 failed to respond; nested exception is org.apache.http.NoHttpResponseException: my-discovery-service.herokuapp.com:443 failed to respond stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "https://my-discovery-service.herokuapp.com/eureka/apps/API-GATEWAY/DESKTOP-MFJBM3L.mshome.net:API-GATEWAY": my-discovery-service.herokuapp.com:443 failed to respond; nested exception is org.apache.http.NoHttpResponseException: my-discovery-service.herokuapp.com:443 failed to respond
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.cancel(RestTemplateEurekaHttpClient.java:87)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:91)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:972)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:948)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:347)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:177)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:196)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:189)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:390)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:136)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:212)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1161)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1106)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1075)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.doClose(ReactiveWebServerApplicationContext.java:147)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1021)
+	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:137)
+	at java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:106)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.http.NoHttpResponseException: my-discovery-service.herokuapp.com:443 failed to respond
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:141)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:157)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776)
+	... 39 more
+
+[30m2022-02-05 17:39:25,735[0;39m [31m[0;39m[33m WARN[0;39m [[34mSpringApplicationShutdownHook[0;39m] [33mcom.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient[0;39m : Request execution failed with message: I/O error on DELETE request for "https://my-discovery-service.herokuapp.com/eureka/apps/API-GATEWAY/DESKTOP-MFJBM3L.mshome.net:API-GATEWAY": my-discovery-service.herokuapp.com:443 failed to respond; nested exception is org.apache.http.NoHttpResponseException: my-discovery-service.herokuapp.com:443 failed to respond
+[30m2022-02-05 17:39:25,823[0;39m [34m[0;39m[32m INFO[0;39m [[34mDiscoveryClient-CacheRefreshExecutor-0[0;39m] [33mcom.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient[0;39m : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='https://my-discovery-service.herokuapp.com/eureka/}, exception=Could not extract response: no suitable HttpMessageConverter found for response type [class org.springframework.cloud.netflix.eureka.http.EurekaApplications] and content type [text/html;charset=utf-8] stacktrace=org.springframework.web.client.UnknownContentTypeException: Could not extract response: no suitable HttpMessageConverter found for response type [class org.springframework.cloud.netflix.eureka.http.EurekaApplications] and content type [text/html;charset=utf-8]
+	at org.springframework.web.client.HttpMessageConverterExtractor.extractData(HttpMessageConverterExtractor.java:126)
+	at org.springframework.web.client.RestTemplate$ResponseEntityResponseExtractor.extractData(RestTemplate.java:1037)
+	at org.springframework.web.client.RestTemplate$ResponseEntityResponseExtractor.extractData(RestTemplate.java:1020)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:778)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getApplicationsInternal(RestTemplateEurekaHttpClient.java:145)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.getApplications(RestTemplateEurekaHttpClient.java:135)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(DiscoveryClient.java:1101)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1014)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1531)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1498)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+[30m2022-02-05 17:39:25,823[0;39m [31m[0;39m[33m WARN[0;39m [[34mDiscoveryClient-CacheRefreshExecutor-0[0;39m] [33mcom.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient[0;39m : Request execution failed with message: Could not extract response: no suitable HttpMessageConverter found for response type [class org.springframework.cloud.netflix.eureka.http.EurekaApplications] and content type [text/html;charset=utf-8]
+[30m2022-02-05 17:39:25,823[0;39m [34m[0;39m[32m INFO[0;39m [[34mDiscoveryClient-CacheRefreshExecutor-0[0;39m] [33mcom.netflix.discovery.DiscoveryClient[0;39m : DiscoveryClient_API-GATEWAY/DESKTOP-MFJBM3L.mshome.net:API-GATEWAY - was unable to refresh its cache! This periodic background refresh will be retried in 30 seconds. status = Cannot execute request on any known server stacktrace = com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+	at com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(DiscoveryClient.java:1101)
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1014)
+	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1531)
+	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1498)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+[30m2022-02-05 17:39:26,282[0;39m [34m[0;39m[32m INFO[0;39m [[34mSpringApplicationShutdownHook[0;39m] [33mcom.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient[0;39m : Request execution succeeded on retry #1
+[30m2022-02-05 17:39:26,283[0;39m [34m[0;39m[32m INFO[0;39m [[34mSpringApplicationShutdownHook[0;39m] [33mcom.netflix.discovery.DiscoveryClient[0;39m : DiscoveryClient_API-GATEWAY/DESKTOP-MFJBM3L.mshome.net:API-GATEWAY - deregister  status: 404
+[30m2022-02-05 17:39:26,287[0;39m [34m[0;39m[32m INFO[0;39m [[34mSpringApplicationShutdownHook[0;39m] [33mcom.netflix.discovery.DiscoveryClient[0;39m : Completed shut down of DiscoveryClient
